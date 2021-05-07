@@ -38,7 +38,11 @@ function clickCheckbox(e) {
 
 const themeInLocal = localStorage.getItem('theme');
 
+
 if (themeInLocal === Theme.DARK) {
    refs.body.classList.add(Theme.DARK);
   refs.checkbox.checked = true;
+} else {
+   refs.body.classList.add(Theme.LIGHT)
 }
+
